@@ -106,6 +106,8 @@ class BngGenerator(object):
                 self.__content += ' MoveConnected'
             if r.total_rate:
                 self.__content += ' TotalRate'
+            if r.tag:
+                self.__content += ' Tag'
             self.__content += "\n"
         self.__content += "end reaction rules\n\n"
 
