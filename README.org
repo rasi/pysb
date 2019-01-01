@@ -1,0 +1,27 @@
+#+TITLE: PySB
+
+Forked from [[https://github.com/PySB/PySB]].
+
+This version requires =Python 3.6= or newer. 
+You can check =Python 3= version by:
+#+BEGIN_SRC sh :exports code
+python3 -V
+#+END_SRC
+
+First create a =Python= virtual environment for installation in your =~/venv= folder and activate it.
+#+BEGIN_SRC sh :exports code
+cd ~/venv
+python3 -m venv pysb
+source ~/venv/pysb/bin/activate
+#+END_SRC
+
+Clone this repository into your =~/git= folder:
+#+BEGIN_SRC sh :exports code
+git clone https://github.com/rasilab/pysb.git
+#+END_SRC
+
+Install =PySB= by:
+#+BEGIN_SRC sh :exports code
+cd ~/git/pysb
+pip install -e .
+#+END_SRC
