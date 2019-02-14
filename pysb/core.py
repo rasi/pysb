@@ -1075,8 +1075,6 @@ class Parameter(Component, sympy.Symbol):
     ----------
     value : number, optional
         The numerical value of the parameter. Defaults to 0.0 if not specified.
-        The provided value is converted to a float before being stored, so any
-        value that cannot be coerced to a float will trigger an exception.
 
     Attributes
     ----------
@@ -1092,7 +1090,7 @@ class Parameter(Component, sympy.Symbol):
 
     def __init__(self, name, value=0.0, _export=True):
         Component.__init__(self, name, _export)
-        self.value = float(value)
+        self.value = value
     
     def get_value(self):
         return self.value
