@@ -1213,7 +1213,7 @@ class Rule(Component):
 
     def __init__(self, name, rule_expression, rate_forward, rate_reverse=None,
                  delete_molecules=False, move_connected=False,
-                 _export=True, total_rate=False, tag=False):
+                 _export=True, total_rate=False, tag=True):
         Component.__init__(self, name, _export)
         if not isinstance(rule_expression, RuleExpression):
             raise Exception("rule_expression is not a RuleExpression object")
